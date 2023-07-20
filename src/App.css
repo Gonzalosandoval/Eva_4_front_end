@@ -1,0 +1,33 @@
+/* home.css */
+
+/* Estilos para el contenedor principal */
+#Home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Estilos para las imágenes dentro de los contenedores */
+.image-container {
+  flex: 0 0 calc(50% - 20px); /* Mostrar dos imágenes en una fila con espacio entre ellas */
+  max-width: 45%; /* Establecer el tamaño máximo de las imágenes */
+  margin: 2.5%; /* Espaciado entre las imágenes */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries para diseño responsivo */
+@media (max-width: 768px) {
+  /* Mostrar una imagen por fila en pantallas pequeñas */
+  .image-container {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
